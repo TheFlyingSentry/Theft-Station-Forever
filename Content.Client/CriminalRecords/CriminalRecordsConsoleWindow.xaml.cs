@@ -261,6 +261,16 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             {
                 message = FormattedMessage.FromMarkupOrThrow(Loc.GetString("criminal-records-console-suspected-reason"));
             }
+            // Harmony addition Status sync with Crime History | i hate this i hate this i would do it like `CriminalRecordsConsoleSystem` under server has it but SecurityStatus isn't constant :agony:
+            else if (criminalRecord.Status == SecurityStatus.Monitor)
+            {
+                message = FormattedMessage.FromMarkupOrThrow(Loc.GetString("criminal-records-console-monitor-reason"));
+            }
+            else if (criminalRecord.Status == SecurityStatus.Search)
+            {
+                message = FormattedMessage.FromMarkupOrThrow(Loc.GetString("criminal-records-console-search-reason"));
+            }
+            // End of Bad Harmony additions :(
             message.AddText($": {reason}");
 
             WantedReason.SetMessage(message);
