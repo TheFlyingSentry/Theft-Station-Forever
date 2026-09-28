@@ -296,8 +296,8 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
     private void SetStatus(SecurityStatus status)
     {
         if (status == SecurityStatus.Wanted || status == SecurityStatus.Suspected || status == SecurityStatus.Hostile
-            // Harmony additional statuses
-            || status == SecurityStatus.Monitor || status == SecurityStatus.Search)
+            // Harmony additional statuses and Sync Status with crime history
+            || status == SecurityStatus.Monitor || status == SecurityStatus.Search || status == SecurityStatus.Detained)
         {
             GetReason(status);
             return;

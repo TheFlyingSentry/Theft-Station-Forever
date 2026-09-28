@@ -25,7 +25,7 @@ criminal-records-auto-history-released = Released.
 criminal-records-auto-history-paroled = Released on parole.
 criminal-records-auto-history-not-parole = Cleared of parole.
 criminal-records-auto-history-hostile = HOSTILE: {$reason}.
-criminal-records-auto-history-not-hostile = Cleared of hostile status.
+criminal-records-auto-history-not-hostile = Hostile status cleared.
 criminal-records-auto-history-eliminated = ELIMINATED.
 criminal-records-auto-history-not-eliminated = Eliminated status cleared.
 criminal-records-auto-history-monitor = MONITOR: {$reason}.
@@ -34,7 +34,7 @@ criminal-records-auto-history-not-monitor = Cleared monitored status.
 criminal-records-auto-history-not-search = Cleared search status.
 
 ## Because even the console is confused on why you would ever do this, also doubt it'll be seen in round common enough for people to notice/care
-criminal-records-auto-history-not-discharged = Cleared of discharged status?
+criminal-records-auto-history-not-discharged = Discharged status cleared?
 
 ## Security channel notifications
 criminal-records-console-not-discharged = {$name} ({$job}) has been cleared of discharged status by {$officer}?
