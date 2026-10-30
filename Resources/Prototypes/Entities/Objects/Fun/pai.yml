@@ -30,7 +30,10 @@
       enum.GasAnalyzerUiKey.Key:
         type: GasAnalyzerBoundUserInterface
         requireInputValidation: false
-      # End of Harmony Additions
+      enum.GeneralStationRecordConsoleKey.Key:
+        type: GeneralStationRecordConsoleBoundUserInterface
+        requireInputValidation: false
+      # End of Harmony Changes
   - type: Sprite
     sprite: Objects/Fun/pai.rsi
     layers:
@@ -116,6 +119,7 @@
       types:
         Blunt: 0.1
     pacifiedCanThrow: true
+  - type: GeneralStationRecordConsole # Medhud, GPS, and Crew Records for the pAI
   # End Harmony Change
 
 - type: entity
