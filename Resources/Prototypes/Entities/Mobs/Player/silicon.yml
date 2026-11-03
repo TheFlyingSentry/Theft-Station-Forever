@@ -494,7 +494,7 @@
       lightTrigger:
         shape:
           !type:PhysShapeCircle
-          radius: 11 # Harmony Change: Accurate AI Eye
+          radius: 11 # Harmony Change: Accurate AI Eye 8 -> 11
         density: 80
         hard: false
         layer:
