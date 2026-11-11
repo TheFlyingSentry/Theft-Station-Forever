@@ -105,11 +105,11 @@ namespace Content.Server.Construction
             // We need a place to hold our construction items!
             var container = _container.EnsureContainer<Container>(user, materialContainer, out var existed);
 
-            if (existed)
-            {
-                _popup.PopupEntity(Loc.GetString("construction-system-construct-cannot-start-another-construction"), user, user);
-                return null;
-            }
+            //if (existed) # Harmony Change: Crafting no longer blocks.
+            //{
+            //    _popup.PopupEntity(Loc.GetString("construction-system-construct-cannot-start-another-construction"), user, user);
+            //    return null;
+            //} # End of Harmony changes
 
             var containers = new Dictionary<string, Container>();
 
